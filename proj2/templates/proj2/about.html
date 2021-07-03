@@ -1,0 +1,82 @@
+{% extends 'proj2/base.html' %}
+{% load static %}
+
+{% block main %}
+    <main>
+        <section class = "sect4">
+            <svg class = "img img4" width = "268" height = "55" viewBox="0 0 268 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42.672 39.368H14.592L8.544 52.832H3L26.04 2.432H31.296L54.336 52.832H48.72L42.672 39.368ZM40.728 35.048L28.632 7.976L16.536 35.048H40.728Z" stroke="#7678CB" stroke-width="3"/>
+                <path d="M94.4254 26.84C97.7374 27.56 100.281 29 102.057 31.16C103.881 33.272 104.793 36.008 104.793 39.368C104.793 43.688 103.185 47.024 99.9694 49.376C96.8014 51.68 92.0974 52.832 85.8574 52.832H62.6734V2.432H84.4174C90.0334 2.432 94.3774 3.56 97.4494 5.816C100.569 8.072 102.129 11.264 102.129 15.392C102.129 18.176 101.433 20.552 100.041 22.52C98.6974 24.44 96.8254 25.88 94.4254 26.84ZM68.0014 6.824V25.112H84.0574C88.1374 25.112 91.2814 24.344 93.4894 22.808C95.6974 21.224 96.8014 18.944 96.8014 15.968C96.8014 12.992 95.6974 10.736 93.4894 9.2C91.2814 7.616 88.1374 6.824 84.0574 6.824H68.0014ZM85.7854 48.44C90.2974 48.44 93.7054 47.672 96.0094 46.136C98.3134 44.6 99.4654 42.2 99.4654 38.936C99.4654 32.648 94.9054 29.504 85.7854 29.504H68.0014V48.44H85.7854Z" stroke="#7678CB" stroke-width="3"/>
+                <path d="M138.987 53.264C133.995 53.264 129.459 52.16 125.379 49.952C121.347 47.696 118.179 44.624 115.875 40.736C113.619 36.848 112.491 32.48 112.491 27.632C112.491 22.784 113.619 18.416 115.875 14.528C118.179 10.64 121.347 7.592 125.379 5.384C129.459 3.128 133.995 2 138.987 2C143.979 2 148.467 3.104 152.451 5.312C156.483 7.52 159.651 10.592 161.955 14.528C164.259 18.416 165.411 22.784 165.411 27.632C165.411 32.48 164.259 36.872 161.955 40.808C159.651 44.696 156.483 47.744 152.451 49.952C148.467 52.16 143.979 53.264 138.987 53.264ZM138.987 48.512C142.971 48.512 146.571 47.624 149.787 45.848C153.003 44.024 155.523 41.528 157.347 38.36C159.171 35.144 160.083 31.568 160.083 27.632C160.083 23.696 159.171 20.144 157.347 16.976C155.523 13.76 153.003 11.264 149.787 9.488C146.571 7.664 142.971 6.752 138.987 6.752C135.003 6.752 131.379 7.664 128.115 9.488C124.899 11.264 122.355 13.76 120.483 16.976C118.659 20.144 117.747 23.696 117.747 27.632C117.747 31.568 118.659 35.144 120.483 38.36C122.355 41.528 124.899 44.024 128.115 45.848C131.379 47.624 135.003 48.512 138.987 48.512Z" stroke="#7678CB" stroke-width="3"/>
+                <path d="M197.657 53.264C191.129 53.264 186.041 51.392 182.393 47.648C178.745 43.904 176.921 38.456 176.921 31.304V2.432H182.249V31.088C182.249 36.944 183.569 41.312 186.209 44.192C188.849 47.072 192.665 48.512 197.657 48.512C202.697 48.512 206.537 47.072 209.177 44.192C211.817 41.312 213.137 36.944 213.137 31.088V2.432H218.321V31.304C218.321 38.456 216.497 43.904 212.849 47.648C209.249 51.392 204.185 53.264 197.657 53.264Z" stroke="#7678CB" stroke-width="3"/>
+                <path d="M243.184 7.04H225.472V2.432H266.224V7.04H248.512V52.832H243.184V7.04Z" stroke="#7678CB" stroke-width="3"/>
+            </svg>
+        </section>
+
+        <section>
+            <svg class = "wordcloud" width = "300">
+                <image href = "{% static 'proj2/images/wordcloud2.png' %}" width = 100% height = 100%></image>
+                <a href = "{% url 'proj2:home' %}">
+                    <polygon opacity="0.0" points="30,13 134,1 143,20 52,43"></polygon>
+                </a>
+
+                <a href = "{% url 'proj2:history' %}">
+                    <polygon opacity="0.0" points="180,67 264,67 230,120 186,120"></polygon>
+                </a>
+
+                <a href = "{% url 'proj2:location' %}">
+                    <polygon opacity="0.0" points="24,60 100,60 94,112 21,113"></polygon>
+                </a>
+
+                <a href = "{% url 'proj2:contact' %}">
+                    <polygon opacity="0.0" points="74,110 216,110 222,185 74,187"></polygon>
+                </a>
+            </svg>
+        </section>
+
+        <section class = "column-content">
+            <table class = "big-table">
+                <thead>
+                    <tr>
+                        <th> Caracteristicas </th>
+                        <th> Elementos/Técnicas </th>
+                        <th> Exemplos </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> Layout </td>
+                        <td> Foi utilizado o CSS Flexbox na construção das páginas. o CSS Grid também está presente em algumas.  </td>
+                        <td> Posição de todos os elementos do website. </td>
+                    </tr>
+
+                    <tr>
+                        <td> Responsividade </td>
+                        <td> Foram utilizadas media queries que adaptam o layout para o telemóvel ou o PC, conforme o tamanho da janela. </td>
+                        <td> Todas as media queries do website. </td>
+                    </tr>
+
+                    <tr>
+                        <td> Seletores </td>
+                        <td> Foram usados diversos tipos de seletores CSS no website. </td>
+                        <td><i>.class</i>, :nth-child(n), :hover, <i>.class1.class2</i>, <i>element, element</i>, entre outros</td>
+                    </tr>
+
+                    <tr>
+                        <td> Etiquetas </td>
+                        <td> Foram usadas quase todas as etiquetas sugeridas, nas diversas páginas. </td>
+                        <td><i> header, main, footer, section, aside, figure, svg, table, thead, tbody, tr, td, entre outras. </i></td>
+                    </tr>
+
+                    <tr>
+                        <td> Animações </td>
+                        <td> Foram feitas diversas animações, aplicadas em todas as páginas do nosso website. </td>
+                        <td> Animação do aparecimento dos títulos das páginas, do preenchimento dos mesmos e o efeito de fade ao carregar a página. </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <iframe class = "main-video" width = "800" height = "500" src="https://www.youtube.com/embed/6LjUOATQ5u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+{% endblock main %}

@@ -1,0 +1,49 @@
+{% load static %}
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href= "{% static 'proj2/style.css' %}">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com"> 
+        <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel = "stylesheet">
+        <link rel = "icon" href = "{% static 'proj2/images/favicon.ico' %}" type = "image/x-icon"/>
+        <link rel = "shortcut icon" href = "{% static 'proj2/images/favicon.ico' %}" type = "image/x-icon"/>
+        <title> Web Node Development </title>
+    </head>
+
+    <body class = "page-fade">
+        <header>
+            <nav class = "nav-bar">
+                <a href = "{% url 'proj2:home' %}"><img src = "{% static 'proj2/images/Logo.png' %}" alt = "Web Node Logo" height = "75"></a>
+
+                <ul class = "nav-links"> 
+                    <li><a href = "{% url 'proj2:home' %}"> Home </a></li>
+                    <li><a href = "{% url 'proj2:history' %}"> History </a></li>
+                    <li><a href = "{% url 'proj2:location' %}"> Location </a></li>
+                    <li><a href = "{% url 'proj2:contact' %}"> Contact </a></li>   
+                    <li><a href = "{% url 'proj2:about' %}"> About </a></li>
+                    <li><a href = "{% url 'admin:index' %}"> Admin </a></li>
+                    <li class = "burger-menu-adjustment"></li>
+                </ul>
+
+                <div class = "burger">
+                    <div class = "line1"></div>
+                    <div class = "line2"></div>
+                    <div class = "line3"></div>
+                </div>      
+            </nav>
+        </header>  
+
+        {% block main %}
+        
+        {% endblock main %}
+
+        <footer>
+            <p> &copy; Web Node Development </p>
+        </footer>
+    </body>
+
+     <script src = "{% static 'proj2/side_menu.js' %}" type = "text/javascript"></script>
+</html>
