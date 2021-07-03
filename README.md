@@ -16,7 +16,7 @@ List of current bugs that need to be fixed:
 - [x] Views/Templates
 - [x] Admin Profile/Admin Page
 - [x] Create Contact Form
-- [ ] Create Contact Model
+- [x] Create Contact Model
 - [ ] Create Contact Page (Auth. Users)
 - [ ] Create Quizz Form 
 - [ ] Create Quizz Model
