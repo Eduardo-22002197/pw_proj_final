@@ -15,11 +15,10 @@
         </section>
 
         <div class = "contact-box">
-            <form action = "https://formsubmit.co/eduffmiranda@gmail.com" method = "POST" target = "_blank">
-                <input type = "text" class = "input-field" placeholder = "Name">
-                <input type = "email" class = "input-field" placeholder = "Email">
-                <input type = "text" class = "input-field" placeholder = "Subject">
-                <textarea type = "text" class = "input-field textarea-field" placeholder = "Text"></textarea>
+            <form action = "" method = "POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                
                 <button type = "submit" class = "btn"> Send Message </button>
             </form>
         </div>

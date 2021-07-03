@@ -1,4 +1,4 @@
-# pw_proj_part_2
+# pw_proj_final
 
 ![Web Node Dev Logo](proj2/static/proj2/images/logo_completo.png)
 
