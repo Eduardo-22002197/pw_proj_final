@@ -8,16 +8,25 @@ List of current bugs that need to be fixed:
 
 - [x] Images on the landing page are not displayed correctly (css file is not working properly).
 - [x] Text/hyperlinks below the landing page images and location images are not formatted correctly .
+- [x] JS side menu not working at all.
 - [ ] Correct website responsiveness. <br/><br/>
 
 ## NEXT STEPS
 
-- [x] Admin profile
-- [x] Create Contact model
-- [ ] Create Quizz model
-- [ ] Create Questions model
-- [ ] Change Contact Page User
-- [ ] Create Contact Page Admin <br/><br/>
+- [x] Views/Templates
+- [x] Admin Profile/Admin Page
+- [x] Create Contact Form
+- [ ] Create Contact Model
+- [ ] Create Contact Page (Auth. Users)
+- [ ] Create Quizz Form 
+- [ ] Create Quizz Model
+- [ ] Matplotlib Quizz Data
+- [ ] Create Comments Page
+- [ ] Create Comment Model
+- [ ] SPA
+- [x] DOM Manipulation JS (Side Menu)
+- [ ] Update Requirements Page
+- [x] Deployment Heroku <br/><br/>
 
 ## INFO
 
