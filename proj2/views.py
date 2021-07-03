@@ -19,7 +19,7 @@ def contact_page_view(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('proj2:home'))
+        return HttpResponseRedirect(reverse('proj2:contact'))
 
     context = {'form': form}
     return render(request, 'proj2/contact.html', context)
