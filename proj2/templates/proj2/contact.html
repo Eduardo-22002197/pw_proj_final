@@ -14,12 +14,17 @@
             </svg>  
         </section>
 
-        <div class = "contact-box">
-            <form action = "" method = "POST">
+        <p class = "form-par"> 
+            At Web Node Development, we aren't all about work. We're always ready to improve. So, feel free to submit your contact if you're interested in working with us, or if you 
+            have any sugestions on how we can improve our website!
+        </p>
+
+        <div class = "form-box">
+            <form method = "POST">
                 {% csrf_token %}
                 {{ form.as_p }}
                 
-                <button type = "submit" class = "btn"> Send Message </button>
+                <button type = "submit" class = "btn-submit"> Send Contact </button>
             </form>
         </div>
     </main>

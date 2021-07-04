@@ -10,5 +10,7 @@ urlpatterns = [
     path('history', views.history_page_view, name = 'history'),
     path('location', views.location_page_view, name = 'location'),
     path('contact', views.contact_page_view, name = 'contact'),
-    path('about', views.about_page_view, name = 'about')
+    path('about', views.about_page_view, name = 'about'),
+    path('comments', views.comments_page_view, name = 'comments'),
+    path('quiz', views.quiz_page_view, name = 'quiz'),
 ]

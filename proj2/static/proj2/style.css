@@ -32,6 +32,57 @@ main {
     justify-content: center;
 }
 
+.form-box {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-par {
+    color: white;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    max-width: 1120px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    width: 700px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid rgb(118, 120, 203);
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: rgb(1, 2, 88);
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.btn-submit {
+    display: block;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: rgb(118, 120, 203);
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
 .page-fade {
     animation: fade 1s 1 ease-in-out;
 }
@@ -43,14 +94,62 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
-    justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
-    align-items: center;                        /* aligns items at the center of the container */
+    display: flex;                              
+    align-items: center; 
+    justify-content: space-between;                       
     min-height: 10.5vh;            
     text-transform: uppercase;
-    font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
+    font-weight: 500;                          
     background-color: rgb(1, 2, 88);
     z-index: 2;
+}
+
+.nav-logo { 
+    margin-left: 20px;
+}
+
+.options-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links-no-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links-no-menu li {
+    list-style: none;                          
+    padding: 7px 7px 7px 8px;
+    border-radius: 5px;
+    transition: .8s ease-out background-color;
+}
+
+.nav-links-no-menu img {
+    filter: invert(100%);
+}
+
+.nav-links-no-menu li:hover {
+    background-color: rgb(118, 120, 203);
+}
+
+.nav-links li:hover {
+    background-color: rgb(118, 120, 203);
+}
+
+.nav-links {
+    display: none;
+    justify-content: space-around;
+    width: 40%;                                 
+}
+
+.nav-links li {
+    list-style: none;                          
+    padding: 7px 7px 7px 8px;
+    border-radius: 5px;
+    transition: .8s ease-out background-color;
 }
 
 .nav-bar a {
@@ -59,139 +158,77 @@ main {
     font-size: 18px;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;                                 /* nav bar will occupy 30% of the space where it's inserted in */
-}
-
-.nav-links li {
-    list-style: none;                           /* removes any list style, like the dots */
-    padding: 7px 7px 7px 8px;
-    border-radius: 5px;
-    transition: .8s ease-out background-color;
-}
-
-.nav-links li:hover {
-    background-color: rgb(118, 120, 203);
-}
-
-.nav-links2 {
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.nav-links2 img {
-    filter: invert(100%);
-}
-
-.nav-links2 li {
-    list-style: none;
-    padding: 7px 7px 3px 8px;
-    border-radius: 5px;
-    transition: .8s ease-out background-color;
-}
-
-.nav-links2 li:hover {
-    background-color: rgb(118, 120, 203);
-}
-
 @media screen and (max-width: 1160px) {
     .nav-links {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 980px) {
-    .nav-links {
-        display: none;
-    }
-
-    .nav-links2 {
-        display: flex;    
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .nav-links2 {
-        width: 55%;    
-    }
-}
 /*************** NAV BAR ***************/
 
 
 /******************** Burger Menu ********************/
 .burger {
-    display: none;                              /* starts invisible, because it only works on certain screens */
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.burger div {                                   /* defines the 3 lines of the burger menu "icon" */
-    width: 25px;                                /* width of each stripe */
-    height: 3px;                                /* height of each stripe */
-    background-color: rgb(118, 120, 203);      /* defines the color of the burger menu "icon" */
-    margin: 5px;                                /* margin between the stripes */
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(118, 120, 203);
+    margin: 5px;
     border-radius: 50px;
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1179px) {
-    .nav-links {
-        width: 55%;
-    }
+body {
+    overflow-x: hidden;                     
 }
 
-/*
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        max-width: 60%;
-    }
+.nav-links {
+    position: fixed;                       
+    right: 0px;
+    height: 92vh;
+    top: 10.50vh;
+    background-color: rgb(118, 120, 203);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    transform: translateX(100%);            
+    transition: transform 0.7s ease-in-out; 
 }
-*/
 
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;                     /* unables the browser to scroll horizontally (to the hidden burger menu). NOTE: when viewport is present on the HTML, overflow is ignored. */
-    }
-
-    .nav-links {
-        position: fixed;                        /* fixes the position of the burger menu so that in mobile devices scrolling sideways doesn't show the white bar (fixes the problem described on line's 15 NOTE) */
-        right: 0px;
-        height: 92vh;
-        top: 10.50vh;
-        background-color: rgb(118, 120, 203);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        transform: translateX(100%);            /* moves the entire burger menu off the screen, to stay hidden */
-        transition: transform 0.7s ease-in-out; /* transition of the burger menu. takes 0.7s and makes it smoother on the beginning and the end */
-    }
-
-    .nav-links a {
-        color: #FFFFFF;
-    }
-
-    .nav-links li {
-        opacity: 0;                             /* hides the burger menu elements */
-    }
-
-    .nav-links li:hover {
-        background-color: transparent;
-    }
-
-    .burger {
-        display: block;                         /* displays the items on top of each other */
-        cursor: pointer;                        /* adds a pointer to the burger menu "icon", which makes it clickable */
-    }
+.nav-links a {
+    color: #FFFFFF;
 }
+
+.nav-links li {
+    opacity: 0;                             
+}
+
+.nav-links li:hover {
+    background-color: transparent;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
 
 .nav-active {
-    transform: translateX(0%);                  /* Unhides the burger menu */
+    transform: translateX(0%);
 }
 
-@keyframes navLinkFade {                        /* animation responsible for the fade in of the burger menu elements */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
@@ -852,47 +889,6 @@ main {
     animation: fillLetters 1s ease-in-out forwards 3.1s;
 }
 
-.contact-box {
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.input-field {
-    width: 700px;
-    height: 40px;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 2px solid rgb(118, 120, 203);
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    background-color: rgb(1, 2, 88);
-    border-radius: 14px;
-    outline: none;
-}
-
-.textarea-field {
-    height: 150px;
-    padding-top: 10px;
-    resize: none;
-}
-
-.btn {
-    display: block;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    margin-top: 18px;
-    padding: 10px;
-    background-color: rgb(118, 120, 203);
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 1190px) {
     .contact-par {
         max-width: 890px;
@@ -935,6 +931,11 @@ main {
     }
 }
 /************ CONTACT PAGE *************/
+
+
+/************** QUIZZ PAGE *************/
+
+/************** QUIZZ PAGE *************/
 
 
 /************** ABOUT PAGE *************/

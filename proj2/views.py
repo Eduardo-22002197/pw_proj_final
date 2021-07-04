@@ -1,9 +1,10 @@
+import proj2
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 from .models import Contact
-from .forms import ContactForm
+from .forms import CommentForm, ContactForm
 
 # Create your views here.
 def home_page_view(request):
@@ -23,6 +24,19 @@ def contact_page_view(request):
 
     context = {'form': form}
     return render(request, 'proj2/contact.html', context)
+
+def comments_page_view(request):
+    form = CommentForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('proj2:comments'))
+
+    context = {'form': form}
+    return render(request, 'proj2/comments.html', context)
+
+def quiz_page_view(request):
+    return render(request, "proj2/quiz.html")
 
 def about_page_view(request):
     return render(request, 'proj2/about.html')
