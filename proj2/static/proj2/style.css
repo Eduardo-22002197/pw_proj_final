@@ -1095,6 +1095,11 @@ button:hover {
     margin-top: 40px;
 }
 
+.img9 {
+    margin-bottom: 10px;
+    animation: fillLetters 1s ease-in-out forwards 2.6s;
+}
+
 .img9 path:nth-child(1) {
     stroke-dasharray: 353.3142395019531;
     stroke-dashoffset: 353.3142395019531;
