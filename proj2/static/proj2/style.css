@@ -50,6 +50,16 @@ main {
     margin-bottom: 30px;
 }
 
+.smaller-par {
+    color: white;
+    margin-top: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 1120px;
+    margin-bottom: 30px;
+}
+
 .input-field {
     width: 700px;
     height: 40px;
@@ -65,7 +75,7 @@ main {
 }
 
 .textarea-field {
-    height: 150px;
+    height: 230px;
     padding-top: 10px;
     resize: none;
 }
@@ -79,6 +89,19 @@ main {
     padding: 10px;
     background-color: rgb(118, 120, 203);
     font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit-big {
+    display: block;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 18px;
+    background-color: rgb(118, 120, 203);
+    font-size: 16px;
     border: none;
     cursor: pointer;
 }
@@ -167,7 +190,7 @@ main {
 /*************** NAV BAR ***************/
 
 
-/******************** Burger Menu ********************/
+/************ BURGER MENU *************/
 .burger {
     margin-right: 20px;
     margin-left: 20px;
@@ -251,7 +274,7 @@ body {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-/*********** Burger Menu End ***********/
+/************ BURGER MENU *************/
 
 
 /************* LANDING PAGE ************/
@@ -642,9 +665,9 @@ body {
     }
 
     .img5 {
-        margin-left: 20px;
-        width: 75%;
-        height: 75%;
+        margin-left: 55px;
+        width: 70%;
+        height: 70%;
     }
 
     .history-par {
@@ -832,11 +855,9 @@ body {
 
 @media screen and (max-width: 760px) {
     .img6 {
-        align-self: flex-start;
-        justify-self: flex-start;
-        margin-left: 0px;
-        width: 75%;
-        height: 75%;
+        margin-left: 70px;
+        width: 70%;
+        height: 70%;
     }    
 }
 /************ LOCATION PAGE ************/
@@ -909,13 +930,13 @@ body {
     }
 
     .input-field {
-        width: 100%;
+        width: 330px;
     }
 }
 
 @media screen and (max-width: 760px) {
     .img7 {
-        margin-left: 20px;
+        margin-left: 40px;
         width: 80%;
         height: 80%;
     }
@@ -933,8 +954,221 @@ body {
 /************ CONTACT PAGE *************/
 
 
-/************** QUIZZ PAGE *************/
+/************ COMMENT PAGE *************/
+.img8 {
+    margin-bottom: 10px;
+    animation: fillLetters 1s ease-in-out forwards 3.4s;
+}
 
+.img8 path:nth-child(1) {
+    stroke-dasharray: 232.60409545898438;
+    stroke-dashoffset: 232.60409545898438;
+    animation: lineAnimation 2s ease-out forwards 0.2s;
+}
+
+.img8 path:nth-child(2) {
+    stroke-dasharray: 297.784423828125;
+    stroke-dashoffset: 297.784423828125;
+    animation: lineAnimation 2s ease-out forwards 0.4s;
+}
+
+.img8 path:nth-child(3) {
+    stroke-dasharray: 367.6081848144531;
+    stroke-dashoffset: 367.6081848144531;
+    animation: lineAnimation 2s ease-out forwards 0.6s;
+}
+
+.img8 path:nth-child(4) {
+    stroke-dasharray: 367.6081848144531;
+    stroke-dashoffset: 367.6081848144531;
+    animation: lineAnimation 2s ease-out forwards 0.8s;
+}
+
+.img8 path:nth-child(5) {
+    stroke-dasharray: 282.6720275878906;
+    stroke-dashoffset: 282.6720275878906;
+    animation: lineAnimation 2s ease-out forwards 1s;
+}
+
+.img8 path:nth-child(6) {
+    stroke-dasharray: 306.3550720214844;
+    stroke-dashoffset: 306.3550720214844;
+    animation: lineAnimation 2s ease-out forwards 1.2s;
+}
+
+.img8 path:nth-child(7) {
+    stroke-dasharray: 182.30401611328125;
+    stroke-dashoffset: 182.30401611328125;
+    animation: lineAnimation 2s ease-out forwards 1.4s;
+}
+
+.img8 path:nth-child(8) {
+    stroke-dasharray: 253.22801208496094;
+    stroke-dashoffset: 253.22801208496094;
+    animation: lineAnimation 2s ease-out forwards 1.6s;
+}
+
+@media screen and (max-width: 1190px) {
+    .comments-par {
+        max-width: 890px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .comments-par {
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .img8 {
+        margin-left: 40px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .comments-par {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .comments-par {
+        max-width: 370px;
+    }
+}
+/************ COMMENT PAGE *************/
+
+
+/************** QUIZZ PAGE *************/
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+	font-size: 22px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+button:hover {
+	background-color: #38a;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.quiz-container {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.img9 path:nth-child(1) {
+    stroke-dasharray: 353.3142395019531;
+    stroke-dashoffset: 353.3142395019531;
+    animation: lineAnimation 2s ease-out forwards 0.2s;
+}
+
+.img9 path:nth-child(2) {
+    stroke-dasharray: 247.62384033203125;
+    stroke-dashoffset: 247.62384033203125;
+    animation: lineAnimation 2s ease-out forwards 0.4s;
+}
+
+.img9 path:nth-child(3) {
+    stroke-dasharray: 111.45600891113281;
+    stroke-dashoffset: 111.45600891113281;
+    animation: lineAnimation 2s ease-out forwards 0.6s;
+}
+
+.img9 path:nth-child(4) {
+    stroke-dasharray: 272.4282531738281;
+    stroke-dashoffset: 272.4282531738281;
+    animation: lineAnimation 2s ease-out forwards 0.8s;
+}
+
+@media screen and (max-width: 1190px) {
+    .quiz-par {
+        max-width: 890px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .quiz-par {
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .img9 {
+        margin-left: 10px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .quiz-par {
+        max-width: 450px;
+    }
+
+    .quiz-container {
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .input-field {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .quiz-par {
+        max-width: 370px;
+    }
+
+    .btn-submit-big {
+        margin-top: 90px;
+        margin-bottom: -70px;
+    }
+
+    .results-par {
+        margin-top: 120px;
+        margin-bottom: -20px;
+    }
+}
 /************** QUIZZ PAGE *************/
 
 

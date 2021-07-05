@@ -10,9 +10,9 @@ List of current bugs that need to be fixed:
 - [x] Text/hyperlinks below the landing page images and location images are not formatted correctly .
 - [x] JS side menu not working at all.
 - [x] Correct nav bar admin icon position.
-- [ ] Correct Conatct Page fields resize.
-- [ ] Correct Heroku Contact database Server Error
-- [ ] Correct website responsiveness. <br/><br/>
+- [x] Correct Conatct Page fields resize.
+- [ ] Correct Heroku databases Server Error (500)
+- [x] Correct website responsiveness. <br/><br/>
 
 ## NEXT STEPS
 
@@ -21,14 +21,14 @@ List of current bugs that need to be fixed:
 - [x] Create Contact Form
 - [x] Create Contact Model
 - [ ] Create Contact Page (Auth. Users)
-- [ ] Create Quizz Page
+- [x] Create Quizz Page
 - [ ] Create Quizz Model
 - [ ] Matplotlib Quizz Data
 - [x] Create Comments Page
 - [x] Create Comment Model
 - [ ] SPA
 - [x] DOM Manipulation JS (Side Menu)
-- [ ] Update Requirements Page
+- [x] Update Requirements Page
 - [x] Deployment Heroku <br/><br/>
 
 ## INFO

@@ -40,4 +40,5 @@ class CommentForm(ModelForm):
             'complete_name': '',
             'rating_website': '',
             'final_comment': '',
+            'comment_date': ''
         }
